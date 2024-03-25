@@ -11,7 +11,7 @@ public class ObstacleDestroy : MonoBehaviour
     void Start()
     {
 
-        player= GameObject.FindGameObjectWithTag("Player");
+        player= GameObject.FindGameObjectWithTag("Obstacle1");
 
 
     }
@@ -27,7 +27,9 @@ public class ObstacleDestroy : MonoBehaviour
 
 
 
-        else if (collision.tag == "Player")
+        else if (collision.CompareTag("Obstacle1"))
+        {
             Destroy(player.gameObject);
+        }
     }
 }
