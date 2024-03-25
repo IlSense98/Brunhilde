@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: d36965c835c9d4765b8ec733e586d901
+  productGUID: 792516b5eb87c4c19acc8bf86829479f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -710,10 +710,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: b0773ebd-58a7-4160-bbe3-a39b31a81b5b
+  cloudProjectId: dc934de7-80f0-45b6-95fd-0b9ffbc9268b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Brunhilde
+  projectName: Brunhilde 2024-03-25_17-54-41
   organizationId: ilsense98
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
