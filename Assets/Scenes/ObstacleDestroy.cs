@@ -1,35 +1,39 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleDestroy : MonoBehaviour
 
 
 {
-    private GameObject player;
+    private GameObject Player;
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-        player= GameObject.FindGameObjectWithTag("Obstacle1");
+        Player = GameObject.FindGameObjectWithTag("Player");
 
 
     }
+
+    
     private void OnTriggerEnter2D(Collider2D collision)
 
     {
 
-        if (collision.tag == "Border")
+        if (collision.tag == "SideBorder")
         {
-
+            Debug.Log("collisione");
             Destroy(this.gameObject);
         }
 
 
 
-        else if (collision.CompareTag("Obstacle1"))
+        else if (collision.tag == "Player")
         {
-            Destroy(player.gameObject);
+            Destroy(Player.gameObject);
         }
     }
 }
