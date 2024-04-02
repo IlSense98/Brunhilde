@@ -20,20 +20,28 @@ void Update()
 
 
 {
-    float directionY = Input.GetAxisRaw("Vertical");
-    playerDirection = new Vector2(0, directionY).normalized;
-}
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                
+                rb.AddForce(Vector2.up * 25, ForceMode2D.Impulse);
+            }
+
+
+        }
+    }
 
 
 void FixedUpdate()
 
 {
 
-        rb.velocity = new Vector2(0, playerDirection.y * playerSpeed);
-
-}
+        
 
     }
 
+    }
 
 
