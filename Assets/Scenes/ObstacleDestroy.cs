@@ -33,7 +33,12 @@ public class ObstacleDestroy : MonoBehaviour
 
         else if (collision.tag == "Player")
         {
-            Destroy(Player.gameObject);
+            if (ObstaclePowerUp.isImmortal == true) {
+                print("OKOK");
+            }
+            else {
+                Destroy(Player.gameObject);
+            }
         }
     }
 }

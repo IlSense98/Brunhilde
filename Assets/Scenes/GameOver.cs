@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public GameObject gameOverPanel;
+    public GameObject player;
+
 
     // Update is called once per frame
     void Update()
@@ -11,8 +13,14 @@ public class GameOver : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("Player") == null)
         {
-
-            gameOverPanel.SetActive(true);
+            if (ObstaclePowerUp.isImmortal == true)
+            {
+                print("NAH");
+            }
+            else
+            {
+                gameOverPanel.SetActive(true);
+            }
 
         }
 
